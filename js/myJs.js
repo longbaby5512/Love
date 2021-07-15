@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
     // process bar
-    setTimeout(function() {
+    setTimeout(function () {
         firstQuestion();
         $('.spinner').fadeOut();
         $('#preloader').delay(350).fadeOut('slow');
@@ -21,7 +21,7 @@ function firstQuestion() {
         imageHeight: 300,
         background: '#fff url("../img/iput-bg.jpg")',
         imageAlt: 'Custom image',
-    }).then(function() {
+    }).then(function () {
         $('.content').show(200);
     })
 }
@@ -58,7 +58,7 @@ function moveButton() {
 
 
 var n = 0;
-$('#no').mousemove(function() {
+$('#no').mousemove(function () {
     if (n < 1)
         switchButton();
     if (n > 1)
@@ -92,7 +92,7 @@ function textGenerate() {
 }
 
 // show popup
-$('#yes').click(function() {
+$('#yes').click(function () {
     var audio = new Audio('../sound/tick.mp3');
     audio.play();
     Swal.fire({
@@ -125,7 +125,7 @@ $('#yes').click(function() {
                 text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
-                    window.location = 'http://fb.com';
+                    window.location = 'http://fb.com/vanlong5512';
                 }
             })
         }
